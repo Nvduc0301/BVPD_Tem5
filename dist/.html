@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="main.js" type="text/javascript" ></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <title>Bệnh viện Phương Đông</title>
+</head>
+<body>
+  <!-- header -->
+  <section>
+    <!-- bg-[length:1907px_100%]  lg:min-h-[68.5rem] min-h-[48] -->
+      <div class="bg-[url('img/header_background.png')] bg-no-repeat  bg-[length:190.7rem] lg:min-h-[68.5rem] min-h-[50rem] ">
+        <div class="container">
+          <div class="flex items-center justify-between pt-[2.4rem]">                    
+            <div class="w-[14rem] lg:w-[17.5rem]">
+                <img src="img/header_logo.png" alt="website logo">
+            </div>
+            <ul id="top-menu" class="lg:flex hidden items-center h-[3rem]">
+                <li class="nvd-li-after hover:text-transparent bg-clip-text bg-gradient-to-r from-[#3EED8B] to-[#0A9949] mix-blend-normal  mr-[1.6rem] mt-[2rem] lg:mt-0  font-bold leading-[1.6rem] text-[1.6rem] whitespace-nowrap"><a href="#">Giới thiệu</a></li>
+                <li class="nvd-li-after hover:text-transparent bg-clip-text bg-gradient-to-r from-[#3EED8B] to-[#0A9949] mix-blend-normal  mx-[1.6rem] mt-[2rem] lg:mt-0  font-bold leading-[1.6rem] text-[1.6rem] whitespace-nowrap"><a  href="#">Đối tượng khách hàng</a></li>
+                <li class="nvd-li-after hover:text-transparent bg-clip-text bg-gradient-to-r from-[#3EED8B] to-[#0A9949] mix-blend-normal  mx-[1.6rem] mt-[2rem] lg:mt-0  font-bold leading-[1.6rem] text-[1.6rem] whitespace-nowrap"><a  href="#">Quy trình</a></li>
+                <li class="nvd-li-after hover:text-transparent bg-clip-text bg-gradient-to-r from-[#3EED8B] to-[#0A9949] mix-blend-normal  mx-[1.6rem] mt-[2rem] lg:mt-0  font-bold leading-[1.6rem] text-[1.6rem] whitespace-nowrap"><a  href="#">Bảng giá</a></li>
+                <li class="nvd-li-after hover:text-transparent bg-clip-text bg-gradient-to-r from-[#3EED8B] to-[#0A9949] mix-blend-normal  mx-[1.6rem] mt-[2rem] lg:mt-0  font-bold leading-[1.6rem] text-[1.6rem] whitespace-nowrap"><a  href="#">Cảm nhận của khách hàng</a></li>
+                <li class="nvd-li-after hover:text-transparent bg-clip-text bg-gradient-to-r from-[#3EED8B] to-[#0A9949] mix-blend-normal  ml-[1.6rem] mt-[2rem] lg:mt-0  font-bold leading-[1.6rem] text-[1.6rem] whitespace-nowrap"><a  href="#">Đội ngũ bác sĩ</a></li>
+            </ul>
+            <!-- bg-  -->
+            <div  class=" flex  justify-center items-center bg-gradient-to-r from-[#3EED8B] to-[#0A9949] mix-blend-normal  shadow-xl  shadow-[#3EED88]/20 rounded-[3rem] text-[#fff] py-[0.6rem] px-[1.2rem] ml-[0.8rem] sm:ml-0">
+                <div class="mr-[0.4rem]">
+                    <img src="img/header_phone-icon.png" alt="">
+                </div>
+                <a href="tel:1910 1806"  id="phone-text" class="font-bold text-[1.6rem] leading-[1.6rem] whitespace-nowrap"> Gọi 1900 1806</a>
+            </div> 
+
+            <div onclick="toggleMenu()" id="toggle-top-menu-icon"  class="lg:hidden cursor-pointer px-2 sm:px-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[3.5rem] h-[2.5rem] lg:w-6 lg:h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>                   
+            </div>
+            <div onclick="toggleMenu()" id="toggle-top-menu-icon2"  class="hidden cursor-pointer px-2 sm:px-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[3.5rem] h-[2.5rem] lg:w-6 lg:h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+            </div>
+          </div>
+
+          <div class=" lg:mt-[10.4rem] mt-[4rem] text-[#fff] sm:w-1/2  w-full">
+            <div class="flex items-center">
+              <div class="font-extrabold text-[1.2rem]  lg:text-[1.6rem] leading-[1.6rem] tracking-[0.4rem] ">TẦM SOÁT UNG THƯ TUYẾN GIÁP</div>
+              <div class="ml-[0.8rem] h-[0.1rem] w-[11.7rem] bg-[#fff] "></div>
+            </div>
+            <div class="font-bold text-[2.6rem] leading-[2.6rem] lg:text-[6rem] lg:leading-[6rem] mt-[1.6rem]">Phát hiện sớm ung thư giúp điều trị dễ dàng</div>
+            <div class="font-medium text-[1.2rem] lg:text-[1.6rem] leading-[1.6rem] mt-[2.4rem]">Tầm soát ung thư tuyến giáp là phương pháp y học hiện đại giúp phát hiện sớm các tổn thương tiền ung thư. Đây được đánh giá là chìa khóa để đưa ra phương pháp điều trị sớm và hiệu quả nhất.</div>
+            <div class="font-bold lg:text-[1.6rem] text-[1.2rem] leading-[1.6rem] mt-[2.4rem] lg:mt-[4.8rem]">Quý khách vui lòng để lại số điện thoại, chúng tôi sẽ liên hệ lại ngay!</div>
+            <div class="relative md:w-full mt-[1.6rem ] mb-[19.1rem]">
+              <input class="phone-price border-2 rounded-[2.7rem] w-full h-[4rem] lg:h-[5.4rem] pl-[2.4rem] bg-[#F5F5F5] text-[#333] mt-[1.6rem] outline-none" type="text" placeholder="Nhập số điện thoại..." >
+              <div onclick="sendPhonePrice()" class="absolute top-[2.2rem] right-[0.6rem]  flex  justify-center items-center bg-gradient-to-r from-[#3EED8B] to-[#0A9949] mix-blend-normal  shadow-xl  shadow-[#3EED88]/20 rounded-[2.3rem] text-white  px-[2.1rem] py-[0.8rem] ">
+                  <div class="w-[1.2rem] lg:w-[2.4rem]">
+                      <img src="img/header_fly-icon.png" alt="">                                                      
+                  </div>
+                  <a class="font-bold text-[1.2rem] leading-[1.2rem] lg:text-[1.6rem] lg:leading-[1.6rem] pl-[0.8rem]">GỬI THÔNG TIN</a>
+              </div>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- define  -->
+
+  <section>
+    <!-- define this -->
+    <div class="relative mt-[4rem] lg:mt-[8.1rem] max-h-[74.4rem]">
+      <div class="container  h-full flex ">
+        <div class="md:w-1/2 lg:mr-[9.1rem] z-[1]">
+          <h2 class="define-title text-[2rem] leading-[2rem]  lg:text-[3.8rem] lg:leading-[3.8rem] font-bold sm:pt-[24rem] lg:pt-[11.9rem]">Gói Tầm soát ung thư tuyến giáp là gì?</h2>
+          <div class="text-[1.2rem] leading-[1.2rem]  lg:text-[1.6rem] lg:leading-[1.6rem] mt-[2.4rem]">Tầm soát ung thư tuyến giáp là phương pháp y học hiện đại giúp phát hiện sớm các tổn thương tiền ung thư. Đây được đánh giá là chìa khóa để đưa ra phương pháp điều trị sớm nhất, nâng cao hiệu quả phục hồi, hạn chế các diễn biến xấu dẫn tới tử vong.</div>
+          <div class="text-[1.2rem] leading-[1.2rem]  lg:text-[1.6rem] lg:leading-[1.6rem] mt-[1.2rem]">Hiện nay xét nghiệm tầm soát ung thư tuyến giáp được nhiều người quan tâm. Thống kê cho thấy căn bệnh chỉ chiếm từ 1 - 2% trong toàn bộ các loại ung thư, tuy nhiên nó lại chiếm tới 90% ung thư các tuyến nội tiết. Đặc biệt, bệnh đứng hàng thứ 9 trong số các ung thư xảy ra ở nữ giới. </div>
+          <div class="text-[1.2rem] leading-[1.2rem]  lg:text-[1.6rem] lg:leading-[1.6rem] mt-[1.2rem]">Điều đáng lo ngại hiện nay là bệnh ung thư tuyến giáp vẫn thường bị bỏ sót. Thậm chí có từ 20 - 60% tổng số bệnh nhân không biết mình mắc bệnh cho tới khi diễn biến xấu ở giai đoạn cuối. Điều này là cực kỳ đáng lo ngại bởi nghiên cứu đã chỉ ra rằng bệnh ung thư tuyến giáp có tỷ lệ chữa khỏi đạt tới 90% nếu như được khám và phát hiện sớm.</div>
+          <a href="tel:1910 1806">
+            <div class="mb-[2rem] lg:mb-0 mt-[2rem] lg:mt-[4rem] w-4/5 max-w-[26.5rem] h-[4.6rem] flex justify-center items-center bg-gradient-to-r from-[#3EED8B] to-[#0A9949] mix-blend-normal shadow-xl shadow-[#3EED88]/20 rounded-[3rem] text-[#fff]">
+              <div class="">
+                <img src="img/define_phone_icon.png" alt="">
+              </div>
+              <span class="font-bold text-[1.2rem] leading-[1.2rem] lg:text-[1.6rem] lg:leading-[1.6rem] pl-[0.8rem] tracking-[0.08rem]"> Gọi cho chúng tôi</span>
+            </div>
+          </a>
+        </div>
+        <div class="z-10 hidden md:flex max-h-[608px]">
+          <img src="img/define_img-nurse1.png" alt="">
+        </div>
+      </div>
+      <div class="absolute bottom-0 lg:bottom-[-13.6rem] right-0 z-0">
+        <img src="img/define_background1.png" alt="">
+      </div>
+    </div>
+
+    <!-- who -->
+    <div class="relative mt-[4rem]  lg:mt-[25.6rem] max-h-[74.4rem] sm:pt-[6rem] lg:pt-0">
+      <div class="absolute bottom-0 left-0 z-20">
+        <img src="img/define_background2.png" alt="">
+      </div>
+      <div class="container flex z-30 relative ">
+        <div class="md:w-2/5 hidden md:flex md:pr-[2rem] lg:pr-0">
+          <div class="flex flex-col items-center ">
+            <div class="h-full css_img">
+              <img src="img/define_img-nurse2.png" alt="">
+            </div>
+            <div onclick="setupModal()" class="btn-sign hover:cursor-pointer lg:flex hidden justify-center items-center bg-gradient-to-r from-[#3EED8B] to-[#0A9949] mix-blend-normal  shadow-xl  shadow-[#3EED88]/20 py-[1.6rem] rounded-[3rem] text-[#fff] w-[20.8rem] lg:h-[4.6rem] mt-[3.2rem] mb-[5.8rem]">
+              <span class="font-bold text-[1.6rem] leading-[1.6rem]  pl-[0.8rem] tracking-[0.08rem]">ĐĂNG KÝ TƯ VẤN</span> 
+            </div>
+          </div>
+        </div>
+        <div class="md:w-3/5 lg:ml-[4rem]">
+          <h2 class="text-[2rem] leading-[2rem]  lg:text-[3.8rem] lg:leading-[3.8rem] font-bold lg:pt-[11.9rem]">Ai nên khám tầm soát ung thư tuyến giáp?</h2>
+          <div class="text-[1.2rem] leading-[1.2rem] lg:text-[1.6rem] lg:leading-[1.6rem] mt-[1.2rem] lg:mt-[2.4rem]">Phát hiện sớm bệnh lý ung thư tuyến giáp không chỉ nâng cao hiệu quả trong điều trị mà còn hạn chế các biến chứng, tổn thương, gia tăng cơ hồi hồi phục hoàn toàn cho người bệnh. Theo khuyến cáo của bác sĩ Bệnh Viện Đa khoa Phương Đông, những trường hợp sau đây nên khám sàng lọc định kỳ căn bệnh.</div>
+          <div class="flex items-center mt-[1rem] lg:mt-[4rem]">
+            <img src="img/define_tym-icon.png" alt="">
+            <div class="ml-[1.6rem] font-medium text-[1.2rem] leading-[1.4rem] lg:text-[1.6rem] lg:leading-[1.6rem] ">Nữ giới ở độ tuổi từ 15 - 35 và nam giới trong độ tuổi từ 40 trở lên, những người có nhu cầu thăm khám bệnh ung thư tuyến giáp.</div>
+          </div>
+          <div class="flex items-center mt-[1rem] lg:mt-[2.4rem] ">
+            <img src="img/define_tym-icon.png" alt="">
+            <div class="ml-[1.6rem] font-medium text-[1.2rem] leading-[1.4rem] lg:text-[1.6rem] lg:leading-[1.6rem] ">Đối tượng có tiền sử gia đình có người bị ung thư tuyến giáp, người mắc hội chứng Cowden, MEN II hoặc FAP.</div>
+          </div>
+          <div class="flex items-center mt-[1rem] lg:mt-[2.4rem] ">
+            <img src="img/define_tym-icon.png" alt="">
+            <div class="ml-[1.6rem] font-medium text-[1.2rem] leading-[1.4rem] lg:text-[1.6rem] lg:leading-[1.6rem] ">Những người có chế độ ăn thiếu i - ốt.</div>
+          </div>  
+          <div class="flex items-center mt-[1rem] lg:mt-[2.4rem] ">
+            <img src="img/define_tym-icon.png" alt="">
+            <div class="ml-[1.6rem] font-medium text-[1.2rem] leading-[1.4rem] lg:text-[1.6rem] lg:leading-[1.6rem] ">Đối tượng bị phơi nhiễm phóng xạ ở mức cao.</div>
+          </div>  
+          <div class="flex items-center mt-[1rem] lg:mt-[2.4rem] ">
+            <img src="img/define_tym-icon.png" alt="">
+            <div class="ml-[1.6rem] font-medium text-[1.2rem] leading-[1.4rem] lg:text-[1.6rem] lg:leading-[1.6rem] ">Người đang mắc các bệnh liên quan tới tuyến giáp và có thể trạng mệt mỏi, sút cân nhanh.</div>
+          </div>  
+          <div class="flex items-center mt-[1rem] lg:mt-[2.4rem]">
+            <img src="img/define_tym-icon.png" alt="">
+            <div class="ml-[1.6rem] font-medium text-[1.2rem] leading-[1.4rem] lg:text-[1.6rem] lg:leading-[1.6rem]">Đối tượng xuất hiện triệu chứng bất thường nghi ngờ ung thư tuyến giáp như: Có khối u ở vùng tuyến giáp, giọng nói khàn, hạch bạch huyết sưng to,...</div>
+          </div>
+          <div onclick="setupModal()" class="btn-sign hover:cursor-pointer flex lg:hidden justify-center items-center bg-gradient-to-r from-[#3EED8B] to-[#0A9949] mix-blend-normal  shadow-xl  shadow-[#3EED88]/20  rounded-[3rem] text-[#fff] w-[20.8rem] py-[1.5rem] my-[2rem] ">
+            <span class="font-bold text-[1.2rem] leading-[1.2rem] lg:text-[1.6rem] lg:leading-[1.6rem] pl-[0.8rem] tracking-[0.08rem]">ĐĂNG KÝ TƯ VẤN</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- signal -->
+  <section>
+    <!-- signal -->
+    <div class="mt-[4rem] lg:mt-[12rem]">
+      <div class="container">
+        <div class="font-bold text-[2rem] leading-[2rem]  lg:text-[3.8rem] lg:leading-[3.8rem] text-center">Dấu hiệu nhận biết Ung thư tuyến giáp</div>
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:grid-rows-2 sm:grid-rows-3 grid-rows-6 gap-y-[6.4rem] mt-[5.6rem]">
+          <div class="flex flex-col items-center justify-center lg:px-[10.3rem] sm:border-x-[0.1rem] sm:border-x-[#EBEBEB] md:border-none">
+              <div class="">
+                <img src="img/signal_icon1.png" alt="">
+              </div>
+              <div class="font-bold text-[1.2rem] leading-[1.2rem] lg:leading-[1.6rem] lg:text-[1.8rem] mt-[1.6rem]">Ho kéo dài mãi</div>
+              <div class="text-[1.6rem] mt-[0.8rem] text-center">Một số dấu hiệu ung thư tuyến giáp giai đoạn đầu cần hết sức lưu ý</div>
+          </div>
+          <div class="flex flex-col items-center justify-center lg:px-[10.3rem] md:border-x-[0.1rem] md:border-x-[#EBEBEB]">
+            <div class="">
+              <img src="img/signal_icon2.png" alt="">
+            </div>
+            <div class="font-bold text-[1.2rem] leading-[1.2rem] lg:leading-[1.6rem] lg:text-[1.8rem] mt-[1.6rem]">Cơ thể mệt mỏi</div>
+            <div class="text-[1.6rem] mt-[0.8rem] text-center">Một số dấu hiệu ung thư tuyến giáp giai đoạn đầu cần hết sức lưu ý</div>
+          </div>
+          <div class="flex flex-col items-center justify-center lg:px-[10.3rem] sm:border-x-[0.1rem] sm:border-x-[#EBEBEB] md:border-none">
+            <div class="">
+              <img src="img/signal_icon3.png" alt="">
+            </div>
+            <div class="font-bold text-[1.2rem] leading-[1.2rem] lg:leading-[1.6rem] lg:text-[1.8rem] mt-[1.6rem]">Thay đổi giọng nói</div>
+            <div class="text-[1.6rem] mt-[0.8rem] text-center">Một số dấu hiệu ung thư tuyến giáp giai đoạn đầu cần hết sức lưu ý</div>
+          </div>
+          <div class="flex flex-col items-center justify-center lg:px-[10.3rem]">
+            <div class="">
+              <img src="img/signal_icon4.png" alt="">
+            </div>
+            <div class="font-bold text-[1.2rem] leading-[1.2rem] lg:leading-[1.6rem] lg:text-[1.8rem] mt-[1.6rem]">Các tuyến ở cổ bị sưng</div>
+            <div class="text-[1.6rem] mt-[0.8rem] text-center">Một số dấu hiệu ung thư tuyến giáp giai đoạn đầu cần hết sức lưu ý</div>
+          </div>
+          <div class="flex flex-col items-center justify-center lg:px-[10.3rem] sm:border-x-[0.1rem] sm:border-x-[#EBEBEB] md:border-x-[0.1rem] md:border-x-[#EBEBEB]">
+            <div class="">
+              <img src="img/signal_icon5.png" alt="">
+            </div>
+            <div class="font-bold text-[1.2rem] leading-[1.2rem] lg:leading-[1.6rem] lg:text-[1.8rem] mt-[1.6rem]">Khó thở, khó nuốt</div>
+            <div class="text-[1.6rem] mt-[0.8rem] text-center">Một số dấu hiệu ung thư tuyến giáp giai đoạn đầu cần hết sức lưu ý</div>
+          </div>
+          <div class="flex flex-col items-center justify-center lg:px-[10.3rem]">
+            <div class="">
+              <img src="img/signal_icon6.png" alt="">
+            </div>
+            <div class="font-bold text-[1.2rem] leading-[1.2rem] lg:leading-[1.6rem] lg:text-[1.8rem] mt-[1.6rem]">Cổ đau phía trước</div>
+            <div class="text-[1.6rem] mt-[0.8rem] text-center">Một số dấu hiệu ung thư tuyến giáp giai đoạn đầu cần hết sức lưu ý</div>
+          </div>     
+        </div>
+      </div>
+    </div>
+
+    <!-- what include? -->
+    <div class="mt-[8rem] sm:mt-[12rem] md:mt-[18rem] lg:mt-[12rem]">
+      <div class="container relative  max-h-[54.2rem] flex">
+          <div class="lg:w-2/5 flex items-end  sm:h-full w-1/2 sm:w-full justify-end mr-[3.2rem] z-[2]">
+            <img src="img/signal_img-hand.png" alt="">
+          </div>
+          <div class="lg:w-3/5 w-full z-[1]">
+            <div class="font-bold text-[1.8rem] leading-[1.8rem] lg:text-[3.8rem] lg:leading-[3.8rem] ">Gói tầm soát ung thư tuyến giáp tại BVĐK Phương Đông bao gồm những gì?</div>
+            <div class="flex flex-col lg:flex-row justify-center items-start lg:items-center mb-[-2rem] mt-[1rem] sm:mt-0">
+              <div class="text-start mt-[1.2rem] sm:mt-[2.4rem] lg:mt-[4rem] text-[1.2rem] leading-[1.2rem] lg:text-[1.8rem] lg:leading-[1.8rem] mr-[3.2rem]  font-bold">Khám bệnh tổng quát</div>
+              <div class="text-start mt-[1.2rem] sm:mt-[2.4rem] lg:mt-[4rem] text-[1.2rem] leading-[1.2rem] lg:text-[1.8rem] lg:leading-[1.8rem] mr-[3.2rem]  ">Khám chuyên khoa Ngoại</div>
+              <div class="text-start mt-[1.2rem] sm:mt-[2.4rem] lg:mt-[4rem] text-[1.2rem] leading-[1.2rem] lg:text-[1.8rem] lg:leading-[1.8rem] mr-[3.2rem]  ">Chẩn đoán hình ảnh</div>
+              <div class="text-start mt-[1.2rem] sm:mt-[2.4rem] lg:mt-[4rem] text-[1.2rem] leading-[1.2rem] lg:text-[1.8rem] lg:leading-[1.8rem]  mb-[0.8rem] sm:mb-0  ">Xét nghiệm</div>
+            </div>
+          </div>
+          <div class="absolute bottom-[-2rem] sm:bottom-0 md:bottom-[-2rem] lg:bottom-[-6rem] z-0">
+            <img src="img/signal_background.png" alt="">
+          </div>
+      </div>
+    </div>
+
+    <div class="swiper mySwiper !px-[2rem]">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+      </div>
+      <div class="swiper-pagination !mt-[4rem]"></div>
+    </div>
+    <div class="flex justify-between z-20 relative mt-[-60%] sm:mt-[-32%] lg:mt-[-20%] mx-[-1.4rem] ">
+      <div class="w-[4rem] ">
+        <img src="img/bonus_prev-icon.png" alt="" class="b ">
+      </div>
+      <div class="w-[4rem] ">
+        <img src="img/bonus_next-icon.png" alt="" class="a">
+      </div>  
+    </div>
+
+    <!-- error -->
+    <div class="relative  max-h-[74.4rem] mt-[12rem]">
+      <div class="container  h-full flex ">
+        <div class="md:w-1/2 mt-[5.9rem]  z-[1]">
+          <h2 class=" text-[2rem] leading-[2rem]  lg:text-[3.8rem] lg:leading-[3.8rem] font-bold mb-[4rem]">Lưu ý khi sử dụng dịch vụ</h2>
+          <div class="flex bg-[#FFF2FD] py-[1.6rem] mb-[2.4rem] rounded-[1.6rem]">
+            <div class="mr-[1.6rem] ml-[2.2rem]">
+              <img src="img/signal_icon-pen.png" alt="">
+            </div>
+            <div class="text-[1.2rem] leading-[1.2rem]  lg:text-[1.6rem] lg:leading-[1.6rem]">Với những trường hợp nghi ngờ ung thư tuyến giáp, bác sĩ có thể chỉ định người bệnh thực hiện thêm các xét nghiệm như chọc hút tế bào tuyến giáp. </div>
+          </div>
+          <div class="flex bg-[#FFF2FD] py-[1.6rem] mb-[2.4rem] rounded-[1.6rem]">
+            <div class="mr-[1.6rem] ml-[2.2rem]">
+              <img src="img/signal_icon-pen.png" alt="">
+            </div>
+            <div class="text-[1.2rem] leading-[1.2rem]  lg:text-[1.6rem] lg:leading-[1.6rem]">Với những trường hợp nghi ngờ ung thư tuyến giáp, bác sĩ có thể chỉ định người bệnh thực hiện thêm các xét nghiệm như chọc hút tế bào tuyến giáp. </div>
+          </div>
+          <div class="flex bg-[#FFF2FD] py-[1.6rem] mb-[2.4rem] rounded-[1.6rem]">
+            <div class="mr-[1.6rem] ml-[2.2rem]">
+              <img src="img/signal_icon-pen.png" alt="">
+            </div>
+            <div class="text-[1.2rem] leading-[1.2rem]  lg:text-[1.6rem] lg:leading-[1.6rem]">Với những trường hợp nghi ngờ ung thư tuyến giáp, bác sĩ có thể chỉ định người bệnh thực hiện thêm các xét nghiệm như chọc hút tế bào tuyến giáp. </div>
+          </div>
+          <div class="flex bg-[#FFF2FD] py-[1.6rem] mb-[4rem] rounded-[1.6rem]"> 
+            <div class="mr-[1.6rem] ml-[2.2rem]">
+              <img src="img/signal_icon-pen.png" alt="">
+            </div>
+            <div class="text-[1.2rem] leading-[1.2rem]  lg:text-[1.6rem] lg:leading-[1.6rem] ">Với những trường hợp nghi ngờ ung thư tuyến giáp, bác sĩ có thể chỉ định người bệnh thực hiện thêm các xét nghiệm như chọc hút tế bào tuyến giáp. </div>
+          </div>
+
+          <div onclick="setupModal()" class="btn-sign hover:cursor-pointer lg:flex hidden justify-center items-center bg-gradient-to-r from-[#3EED8B] to-[#0A9949] mix-blend-normal  shadow-xl  shadow-[#3EED88]/20 py-[1.6rem] rounded-[3rem] text-[#fff] w-[20.8rem] lg:h-[4.6rem] mt-[4rem]">
+            <span class="font-bold text-[1.6rem] leading-[1.6rem]  pl-[0.8rem] tracking-[0.08rem]">ĐĂNG KÝ TƯ VẤN</span> 
+          </div>
+        </div>
+        <div class="w-1/2 z-10 hidden md:flex">
+          <img src="img/signal_img-nurse.png" alt="">
+        </div>
+      </div>
+      <div class="absolute bottom-0 lg:bottom-[-13.6rem] right-0 z-0">
+        <img src="img/define_background1.png" alt="">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- bonus service -->
+  <section>
+    <!-- bonus slider -->
+    <div class="mt-[8rem] lg:mt-[25.6rem] ">
+      <div class="container">
+        <h2 class="text-center text-[2rem] leading-[2rem]  lg:text-[3.8rem] lg:leading-[3.8rem] font-bold mb-[4rem]">Các gói dịch vụ liên quan</h2>
+        <div class="swiper mySwiper !px-[2rem]">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              
+              <div class="h-[46.3rem] border-[#EBEBEB] border-[1px] rounded-[2.5rem]">
+                <div class="">
+                  <img src="img/bonus_img-disease1.png" alt="">
+                </div>
+                <div class="mx-[2.4rem]">
+                  <div class="font-semibold text-[1.8rem] leading-[1.8rem] mt-[2rem]">Gói Khám sàng lọc ung thư tiền liệt tuyến</div>
+                  <div class="mt-[1.2rem] text-[1.4rem] leading-[1.4rem]">Ung thư tiền liệt tuyến rất nguy hiểm, đe dọa nặng nề đến sức khỏe nam giới. Vì vậy các bác sĩ luôn khuyến nghị người thuộc đối tượng có nguy cơ cao mắc căn bệnh này nên khám sàng lọc định kỳ để có thể phát hiện sớm, chính xác, giúp điều trị hiệu quả.</div>
+                  <div class="flex items-center mt-[2.4rem] text-[#3EED8B] lg:mb-[3.1rem]">
+                    <div onclick="setupModal()" class="btn-sign hover:cursor-pointer font-semibold text-[1.8rem] leading-[1.8rem] mr-[0.8rem]">Đăng ký tư vấn ngay</div>
+                    <div class="">
+                      <img src="img/bonus_fast-icon.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              
+              <div class="h-[46.3rem] border-[#EBEBEB] border-[1px] rounded-[2.5rem]">
+                <div class="">
+                  <img src="img/bonus_img-disease2.png" alt="">
+                </div>
+                <div class="mx-[2.4rem]">
+                  <div class="font-semibold text-[1.8rem] leading-[1.8rem] mt-[2rem]">Gói Khám tầm soát ung thư đường tiêu hoá</div>
+                  <div class="mt-[1.2rem] text-[1.4rem] leading-[1.4rem]">Tầm soát ung thư đường tiêu hoá là việc làm rất quan trọng với mỗi người. Tầm soát định kỳ được khuyến cáo cho tất cả mọi người, trong đó những trường hợp đặc biệt dưới đây thuộc nguy cơ cao mắc ung thư đường tiêu hoá.</div>
+                  <div class="flex items-center mt-[2.4rem] text-[#3EED8B] lg:mb-[3.1rem]">
+                    <div onclick="setupModal()" class="btn-sign hover:cursor-pointer font-semibold text-[1.8rem] leading-[1.8rem] mr-[0.8rem]">Đăng ký tư vấn ngay</div>
+                    <div class="">
+                      <img src="img/bonus_fast-icon.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              
+              <div class="h-[46.3rem] border-[#EBEBEB] border-[1px] rounded-[2.5rem]">
+                <div class="">
+                  <img src="img/bonus_img-disease3.png" alt="">
+                </div>
+                <div class="mx-[2.4rem]">
+                  <div class="font-semibold text-[1.8rem] leading-[1.8rem] mt-[2rem]">Gói Khám sàng lọc ung thư phổi</div>
+                  <div class="mt-[1.2rem] text-[1.4rem] leading-[1.4rem]">Ung thư phổi là một trong những bệnh lý nguy hiểm đe dọa cả phụ nữ và nam giới tại Việt Nam. Bởi vậy, khám sàng lọc ung thư phổi luôn được các bác sĩ khuyến khích thực hiện định kỳ nhằm phát hiện sớm tình trạng bệnh để có phương án điều trị hiệu quả.</div>
+                  <div class="flex items-center mt-[2.4rem] text-[#3EED8B] lg:mb-[3.1rem]">
+                    <div onclick="setupModal()" class="btn-sign hover:cursor-pointer font-semibold text-[1.8rem] leading-[1.8rem] mr-[0.8rem]">Đăng ký tư vấn ngay</div>
+                    <div class="">
+                      <img src="img/bonus_fast-icon.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              
+              <div class="h-[46.3rem] border-[#EBEBEB] border-[1px] rounded-[2.5rem]">
+                <div class="">
+                  <img src="img/bonus_img-disease1.png" alt="">
+                </div>
+                <div class="mx-[2.4rem]">
+                  <div class="font-semibold text-[1.8rem] leading-[1.8rem] mt-[2rem]">Gói Khám sàng lọc ung thư tiền liệt tuyến</div>
+                  <div class="mt-[1.2rem] text-[1.4rem] leading-[1.4rem]">Ung thư tiền liệt tuyến rất nguy hiểm, đe dọa nặng nề đến sức khỏe nam giới. Vì vậy các bác sĩ luôn khuyến nghị người thuộc đối tượng có nguy cơ cao mắc căn bệnh này nên khám sàng lọc định kỳ để có thể phát hiện sớm, chính xác, giúp điều trị hiệu quả.</div>
+                  <div class="flex items-center mt-[2.4rem] text-[#3EED8B] lg:mb-[3.1rem]">
+                    <div onclick="setupModal()" class="btn-sign hover:cursor-pointer font-semibold text-[1.8rem] leading-[1.8rem] mr-[0.8rem]">Đăng ký tư vấn ngay</div>
+                    <div class="">
+                      <img src="img/bonus_fast-icon.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              
+              <div class="h-[46.3rem] border-[#EBEBEB] border-[1px] rounded-[2.5rem]">
+                <div class="">
+                  <img src="img/bonus_img-disease2.png" alt="">
+                </div>
+                <div class="mx-[2.4rem]">
+                  <div class="font-semibold text-[1.8rem] leading-[1.8rem] mt-[2rem]">Gói Khám tầm soát ung thư đường tiêu hoá</div>
+                  <div class="mt-[1.2rem] text-[1.4rem] leading-[1.4rem]">Tầm soát ung thư đường tiêu hoá là việc làm rất quan trọng với mỗi người. Tầm soát định kỳ được khuyến cáo cho tất cả mọi người, trong đó những trường hợp đặc biệt dưới đây thuộc nguy cơ cao mắc ung thư đường tiêu hoá.</div>
+                  <div class="flex items-center mt-[2.4rem] text-[#3EED8B] lg:mb-[3.1rem]">
+                    <div onclick="setupModal()" class="btn-sign hover:cursor-pointer font-semibold text-[1.8rem] leading-[1.8rem] mr-[0.8rem]">Đăng ký tư vấn ngay</div>
+                    <div class="">
+                      <img src="img/bonus_fast-icon.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              
+              <div class="h-[46.3rem] border-[#EBEBEB] border-[1px] rounded-[2.5rem]">
+                <div class="">
+                  <img src="img/bonus_img-disease3.png" alt="">
+                </div>
+                <div class="mx-[2.4rem]">
+                  <div class="font-semibold text-[1.8rem] leading-[1.8rem] mt-[2rem]">Gói Khám sàng lọc ung thư phổi</div>
+                  <div class="mt-[1.2rem] text-[1.4rem] leading-[1.4rem]">Ung thư phổi là một trong những bệnh lý nguy hiểm đe dọa cả phụ nữ và nam giới tại Việt Nam. Bởi vậy, khám sàng lọc ung thư phổi luôn được các bác sĩ khuyến khích thực hiện định kỳ nhằm phát hiện sớm tình trạng bệnh để có phương án điều trị hiệu quả.</div>
+                  <div class="flex items-center mt-[2.4rem] text-[#3EED8B] lg:mb-[3.1rem]">
+                    <div onclick="setupModal()" class="btn-sign hover:cursor-pointer font-semibold text-[1.8rem] leading-[1.8rem] mr-[0.8rem]">Đăng ký tư vấn ngay</div>
+                    <div class="">
+                      <img src="img/bonus_fast-icon.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination !mt-[4rem]"></div>
+        </div>
+        <div class="flex justify-between z-20 relative mt-[-60%] sm:mt-[-32%] lg:mt-[-20%] mx-[-1.4rem] ">
+          <div class="w-[4rem] ">
+            <img src="img/bonus_prev-icon.png" alt="" class="b ">
+          </div>
+          <div class="w-[4rem] ">
+            <img src="img/bonus_next-icon.png" alt="" class="a">
+          </div>  
+        </div>
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            effect: 'cover',
+              // centeredSlides: true, 
+              slidesPerView: 1,
+              spaceBetween: 30,
+              loop: true,
+              pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+  
+                // type: "fraction",
+              },
+              navigation: {
+                nextEl: ".a",
+                prevEl: ".b",
+              },
+              breakpoints: {
+                      640: {
+                      slidesPerView: 2,
+                      spaceBetween: 20,
+                      },
+                      768: {
+                      slidesPerView: 2,
+                      spaceBetween: 20,
+                      },
+                      1024: {
+                      slidesPerView: 3,
+                      spaceBetween: 32,
+                      },
+                  },
+            });
+        </script>
+      </div>
+    </div>
+
+    <!-- benefit --> 
+    <div class="md:max-h-[65.1rem]  bg-[url('img/benefit_background.png')] bg-no-repeat bg-[length:100%_78rem] mt-[32rem] sm:mt-[22rem] md:mt-[30rem] lg:mt-[44.6rem] pb-[9.5rem]" >
+      <div class="container">
+          <h2 class="text-center mx-auto max-w-[65.4rem] text-[2rem] leading-[2rem]  lg:text-[3.8rem] lg:leading-[3.8rem] font-bold pt-[4rem] md:pt-[8.2rem]">Lợi ích khi sử dụng dịch vụ Tầm soát ung thư tuyến giáp</h2>
+          <div class="mt-[2rem] sm:mt-[4.8rem]  grid grid-rows-6 sm:grid-cols-2 sm:grid-rows-3 gap-[2rem] sm:gap-[3.2rem]">
+              <div class="border-[#fff] border-[0.1rem] rounded-[1.5rem] relative">
+                <div class="bg-[#fff] h-[0.3rem] w-[4.8rem] absolute top-0 left-[8rem]"></div>
+                <div class="flex items-center py-[1.2rem] sm:py-[2.6rem] pr-[2.6rem] pl-[1.8rem]">
+                  <div class="">
+                    <img src="img/benefit_confirm-icon.png" alt="">
+                  </div>
+                  <div class="pl-[1.3rem] text-[1.2rem] leading-[1.2rem]  lg:text-[1.6rem] lg:leading-[1.8rem] font-semibold text-[#fff]">Bệnh viện có khuôn viên khang trang, hiện đại và trong lành với hệ thống cây xanh rộng khắp, rất lý tưởng trong việc điều trị và hồi phục của người bệnh. </div>
+                </div>
+                <div class="bg-[#fff] h-[0.3rem] w-[4.8rem] absolute bottom-0 right-[8rem]"></div>
+              </div>
+              <div class="border-[#fff] border-[0.1rem] rounded-[1.5rem] relative">
+                <div class="bg-[#fff] h-[0.3rem] w-[4.8rem] absolute top-0 left-[8rem]"></div>
+                <div class="flex items-center py-[1.2rem] sm:py-[2.6rem] pr-[2.6rem] pl-[1.8rem]">
+                  <div class="">
+                    <img src="img/benefit_confirm-icon.png" alt="">
+                  </div>
+                  <div class="pl-[1.3rem] text-[1.2rem] leading-[1.2rem]  lg:text-[1.6rem] lg:leading-[1.8rem] font-semibold text-[#fff]">Bệnh viện có khuôn viên khang trang, hiện đại và trong lành với hệ thống cây xanh rộng khắp, rất lý tưởng trong việc điều trị và hồi phục của người bệnh. </div>
+                </div>
+                <div class="bg-[#fff] h-[0.3rem] w-[4.8rem] absolute bottom-0 right-[8rem]"></div>
+              </div>
+              <div class="border-[#fff] border-[0.1rem] rounded-[1.5rem] relative">
+                <div class="bg-[#fff] h-[0.3rem] w-[4.8rem] absolute top-0 left-[8rem]"></div>
+                <div class="flex items-center py-[1.2rem] sm:py-[2.6rem] pr-[2.6rem] pl-[1.8rem]">
+                  <div class="">
+                    <img src="img/benefit_confirm-icon.png" alt="">
+                  </div>
+                  <div class="pl-[1.3rem] text-[1.2rem] leading-[1.2rem]  lg:text-[1.6rem] lg:leading-[1.8rem] font-semibold text-[#fff]">Bệnh viện có khuôn viên khang trang, hiện đại và trong lành với hệ thống cây xanh rộng khắp, rất lý tưởng trong việc điều trị và hồi phục của người bệnh. </div>
+                </div>
+                <div class="bg-[#fff] h-[0.3rem] w-[4.8rem] absolute bottom-0 right-[8rem]"></div>
+              </div>
+              <div class="border-[#fff] border-[0.1rem] rounded-[1.5rem] relative">
+                <div class="bg-[#fff] h-[0.3rem] w-[4.8rem] absolute top-0 left-[8rem]"></div>
+                <div class="flex items-center py-[1.2rem] sm:py-[2.6rem] pr-[2.6rem] pl-[1.8rem]">
+                  <div class="">
+                    <img src="img/benefit_confirm-icon.png" alt="">
+                  </div>
+                  <div class="pl-[1.3rem] text-[1.2rem] leading-[1.2rem]  lg:text-[1.6rem] lg:leading-[1.8rem] font-semibold text-[#fff]">Bệnh viện có khuôn viên khang trang, hiện đại và trong lành với hệ thống cây xanh rộng khắp, rất lý tưởng trong việc điều trị và hồi phục của người bệnh. </div>
+                </div>
+                <div class="bg-[#fff] h-[0.3rem] w-[4.8rem] absolute bottom-0 right-[8rem]"></div>
+              </div>
+              <div class="border-[#fff] border-[0.1rem] rounded-[1.5rem] relative">
+                <div class="bg-[#fff] h-[0.3rem] w-[4.8rem] absolute top-0 left-[8rem]"></div>
+                <div class="flex items-center py-[1.2rem] sm:py-[2.6rem] pr-[2.6rem] pl-[1.8rem]">
+                  <div class="">
+                    <img src="img/benefit_confirm-icon.png" alt="">
+                  </div>
+                  <div class="pl-[1.3rem] text-[1.2rem] leading-[1.2rem]  lg:text-[1.6rem] lg:leading-[1.8rem] font-semibold text-[#fff]">Bệnh viện có khuôn viên khang trang, hiện đại và trong lành với hệ thống cây xanh rộng khắp, rất lý tưởng trong việc điều trị và hồi phục của người bệnh. </div>
+                </div>
+                <div class="bg-[#fff] h-[0.3rem] w-[4.8rem] absolute bottom-0 right-[8rem]"></div>
+              </div>
+              <div class="border-[#fff] border-[0.1rem] rounded-[1.5rem] relative">
+                <div class="bg-[#fff] h-[0.3rem] w-[4.8rem] absolute top-0 left-[8rem]"></div>
+                <div class="flex items-center py-[1.2rem] sm:py-[2.6rem] pr-[2.6rem] pl-[1.8rem]">
+                  <div class="">
+                    <img src="img/benefit_confirm-icon.png" alt="">
+                  </div>
+                  <div class="pl-[1.3rem] text-[1.2rem] leading-[1.2rem]  lg:text-[1.6rem] lg:leading-[1.8rem] font-semibold text-[#fff]">Bệnh viện có khuôn viên khang trang, hiện đại và trong lành với hệ thống cây xanh rộng khắp, rất lý tưởng trong việc điều trị và hồi phục của người bệnh. </div>
+                </div>
+                <div class="bg-[#fff] h-[0.3rem] w-[4.8rem] absolute bottom-0 right-[8rem]"></div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- process -->
+    <div class=" mt-[4rem] lg:mt-[11.4rem]">
+      <div class="container">
+        <h2 class="text-center mx-auto max-w-[65.4rem] text-[2rem] leading-[2rem]  lg:text-[3.8rem] lg:leading-[3.8rem] font-bold pt-[4rem] md:pt-[8.2rem]">Quy trình thăm khám ung thư tuyến giáp tại BVĐK Phương Đông</h2>
+        <div class="mt-[7.4rem] grid grid-cols-1 grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 gap-y-[8rem] gap-[3.2rem]">
+          <div class="relative bg-[#fff] rounded-[2rem] flex flex-col justify-center items-center drop-shadow-[0_8px_11px_rgba(0,0,0,0.08)]  ">
+            <div class="mt-[-10%] mr-[14%]">
+                <img src="img/process_ghim-1.png" alt="">
+            </div>
+            <h2 class="font-bold text-[2rem] leading-[2rem] lg:text-[2.4rem] lg:leading-[2.4rem] mt-[2.3rem] ">Bước 1:</h2>
+            <div class="font-semibold text-[1.4rem] leading-[1.4rem] lg:text-[1.8rem] lg:leading-[1.8rem] mt-[0.8rem] h-[8.8rem] ml-[3.5rem] mr-[2.5rem] text-center">Khách hàng liên hệ thông qua tổng đài 19001806 hoặc đến bệnh viện trực tiếp để được tư vấn và đặt lịch khám.</div>
+            <div class="mt-[2.4rem] mb-[3.4rem]">
+              <img src="img/process_img-human.png" alt="">
+            </div>
+            <div class="absolute bottom-[-0.8rem] w-[11.2rem] h-[1.9rem] bg-gradient-to-r from-pink-300 to-purple-500 mix-blend-normal rounded-[1.5rem]"></div>
+          </div>
+          <div class="relative bg-[#fff] rounded-[2rem] flex flex-col justify-center items-center drop-shadow-[0_8px_11px_rgba(0,0,0,0.08)] ">
+            <div class="mt-[-10%] mr-[14%]">
+                <img src="img/process_ghim-2.png" alt="">
+            </div>
+            <h2 class="font-bold text-[2rem] leading-[2rem] lg:text-[2.4rem] lg:leading-[2.4rem] mt-[2.3rem] ">Bước 2:</h2>
+            <div class="font-semibold text-[1.4rem] leading-[1.4rem] lg:text-[1.8rem] lg:leading-[1.8rem] mt-[0.8rem] h-[8.8rem] ml-[3.5rem] mr-[2.5rem] text-center">Thanh toán chi phí của gói khám.</div>
+            <div class="mt-[2.4rem] mb-[3.4rem]">
+              <img src="img/process_img-money.png" alt="">
+            </div>
+            <div class="absolute bottom-[-0.8rem] w-[11.2rem] h-[1.9rem] bg-gradient-to-r from-pink-300 to-purple-500 mix-blend-normal rounded-[1.5rem]"></div>
+          </div>
+          <div class="relative bg-[#fff] rounded-[2rem] flex flex-col justify-center items-center drop-shadow-[0_8px_11px_rgba(0,0,0,0.08)] ">
+            <div class="mt-[-10%] mr-[14%]">
+                <img src="img/process_ghim-3.png" alt="">
+            </div>
+            <h2 class="font-bold text-[2rem] leading-[2rem] lg:text-[2.4rem] lg:leading-[2.4rem] mt-[2.3rem] ">Bước 3:</h2>
+            <div class="font-semibold text-[1.4rem] leading-[1.4rem] lg:text-[1.8rem] lg:leading-[1.8rem] mt-[0.8rem] h-[8.8rem] ml-[3.5rem] mr-[2.5rem] text-center">Thực hiện các bước thăm khám, xét nghiệm và chẩn đoán bằng hình ảnh tại viện.</div>
+            <div class="mt-[2.4rem] mb-[3.4rem]">
+              <img src="img/process_img-examination.png" alt="">
+            </div>
+            <div class="absolute bottom-[-0.8rem] w-[11.2rem] h-[1.9rem] bg-gradient-to-r from-pink-300 to-purple-500 mix-blend-normal rounded-[1.5rem]"></div>
+          </div>
+          <div class="relative bg-[#fff] rounded-[2rem] flex flex-col justify-center items-center drop-shadow-[0_8px_11px_rgba(0,0,0,0.08)] ">
+            <div class="mt-[-10%] mr-[14%]">
+                <img src="img/process_ghim-4.png" alt="">
+            </div>
+            <h2 class="font-bold text-[2rem] leading-[2rem] lg:text-[2.4rem] lg:leading-[2.4rem] mt-[2.3rem] ">Bước 4:</h2>
+            <div class="font-semibold text-[1.4rem] leading-[1.4rem] lg:text-[1.8rem] lg:leading-[1.8rem] mt-[0.8rem] h-[8.8rem] ml-[3.5rem] mr-[2.5rem] text-center ">Bác sĩ trả kết quả, kết luận và tư vấn quá trình điều trị tiếp theo (nếu có).</div>
+            <div class="mt-[2.4rem] mb-[3.4rem]">
+              <img src="img/process_img-doc.png" alt="">
+            </div>
+            <div class="absolute bottom-[-0.8rem] w-[11.2rem] h-[1.9rem] bg-gradient-to-r from-pink-300 to-purple-500 mix-blend-normal rounded-[1.5rem]"></div>
+          </div>
+        </div>
+        <div onclick="setupModal()" class="btn-sign hover:cursor-pointer mx-auto flex justify-center items-center bg-gradient-to-r from-[#3EED8B] to-[#0A9949] mix-blend-normal  shadow-xl  shadow-[#3EED88]/20 py-[1.6rem] rounded-[3rem] text-[#fff] w-[20.8rem] lg:h-[4.6rem] mt-[3.2rem] mb-[5.8rem]">
+          <span class="font-bold text-[1.2rem] leading-[1.2rem] sm:text-[1.6rem] sm:leading-[1.6rem]  pl-[0.8rem] tracking-[0.08rem]">ĐĂNG KÝ TƯ VẤN</span> 
+        </div>
+      </div>
+    </div>
+
+    <!-- team -->
+    <div class="mt-[8rem]">
+      <div class="container ">
+        <h2 class="text-center text-[2rem] leading-[2rem]  lg:text-[3.8rem] lg:leading-[3.8rem] font-bold mb-[4rem]">Đội ngũ bác sĩ của chúng tôi</h2>
+        <div class="bg-[url('img/team_background6.png')] bg-no-repeat bg-[length:1378px] bg-bottom">
+          <div class="swiper mySwiper2 !px-[2rem]   ">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide flex">
+                <div class="max-h-[36.5rem] css_img w-1/2 mx-auto lg:w-full">
+                  <img src="img/team_doctor-1.png" alt="">
+                </div>
+                <div class="flex flex-col justify-center items-center text-[#fff] mt-[2.4rem]">
+                  <div class="font-bold text-[1.4rem] leading-[1.4rem] lg:text-[1.8rem] lg:leading-[1.8rem] text-center">NGUYỄN TRUNG CHÍNH</div>
+                  <div class="mt-[0.8rem] text-[1.2rem] leading-[1.2rem] lg:text-[1.4rem] lg:leading-[1.4rem]">PGS.TS. Bác sĩ Ung bướu</div>
+                  <div class="flex mt-[2.4rem] mb-[0.4rem]">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                  </div>
+                  <div class="text-[1.2rem] leading-[1.2rem] mb-[4.1rem]">4.8/5 (38 bình chọn)  </div>
+                </div> 
+              </div>
+              <div class="swiper-slide flex">
+                <div class="max-h-[36.5rem] css_img w-1/2 mx-auto lg:w-full">
+                  <img src="img/team_doctor-2.png" alt="">
+                </div>
+                <div class="flex flex-col justify-center items-center text-[#fff] mt-[2.4rem]">
+                  <div class="font-bold text-[1.4rem] leading-[1.4rem] lg:text-[1.8rem] lg:leading-[1.8rem] text-center">NGUYỄN TRUNG CHÍNH</div>
+                  <div class="mt-[0.8rem] text-[1.2rem] leading-[1.2rem] lg:text-[1.4rem] lg:leading-[1.4rem]">PGS.TS. Bác sĩ Ung bướu</div>
+                  <div class="flex mt-[2.4rem] mb-[0.4rem]">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                  </div>
+                  <div class="text-[1.2rem] leading-[1.2rem] mb-[4.1rem]">4.8/5 (38 bình chọn)  </div>
+                </div>
+              </div>
+              <div class="swiper-slide flex">
+                <div class="max-h-[36.5rem] css_img w-1/2 mx-auto lg:w-full">
+                  <img src="img/team_doctor-3.png" alt="">
+                </div>
+                <div class="flex flex-col justify-center items-center text-[#fff] mt-[2.4rem]">
+                  <div class="font-bold text-[1.4rem] leading-[1.4rem] lg:text-[1.8rem] lg:leading-[1.8rem] text-center">NGUYỄN TRUNG CHÍNH</div>
+                  <div class="mt-[0.8rem] text-[1.2rem] leading-[1.2rem] lg:text-[1.4rem] lg:leading-[1.4rem]">PGS.TS. Bác sĩ Ung bướu</div>
+                  <div class="flex mt-[2.4rem] mb-[0.4rem]">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                  </div>
+                  <div class="text-[1.2rem] leading-[1.2rem] mb-[4.1rem]">4.8/5 (38 bình chọn)  </div>
+                </div>
+              </div>
+              <div class="swiper-slide flex">
+                <div class="max-h-[36.5rem] css_img w-1/2 mx-auto lg:w-full">
+                  <img src="img/team_doctor-4.png" alt="">
+                </div>
+                <div class="flex flex-col justify-center items-center text-[#fff] mt-[2.4rem]">
+                  <div class="font-bold text-[1.4rem] leading-[1.4rem] lg:text-[1.8rem] lg:leading-[1.8rem] text-center">NGUYỄN TRUNG CHÍNH</div>
+                  <div class="mt-[0.8rem] text-[1.2rem] leading-[1.2rem] lg:text-[1.4rem] lg:leading-[1.4rem]">PGS.TS. Bác sĩ Ung bướu</div>
+                  <div class="flex mt-[2.4rem] mb-[0.4rem]">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                  </div>
+                  <div class="text-[1.2rem] leading-[1.2rem] mb-[4.1rem]">4.8/5 (38 bình chọn)  </div>
+                </div>
+              </div>
+              <div class="swiper-slide flex">
+                <div class="max-h-[36.5rem] css_img w-1/2 mx-auto lg:w-full">
+                  <img src="img/team_doctor-1.png" alt="">
+                </div>
+                <div class="flex flex-col justify-center items-center text-[#fff] mt-[2.4rem]">
+                  <div class="font-bold text-[1.4rem] leading-[1.4rem] lg:text-[1.8rem] lg:leading-[1.8rem] text-center">NGUYỄN TRUNG CHÍNH</div>
+                  <div class="mt-[0.8rem] text-[1.2rem] leading-[1.2rem] lg:text-[1.4rem] lg:leading-[1.4rem]">PGS.TS. Bác sĩ Ung bướu</div>
+                  <div class="flex mt-[2.4rem] mb-[0.4rem]">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                  </div>
+                  <div class="text-[1.2rem] leading-[1.2rem] mb-[4.1rem]">4.8/5 (38 bình chọn)  </div>
+                </div>
+              </div>
+              <div class="swiper-slide flex">
+                <div class="max-h-[36.5rem] css_img w-1/2 mx-auto lg:w-full">
+                  <img src="img/team_doctor-2.png" alt="">
+                </div>
+                <div class="flex flex-col justify-center items-center text-[#fff] mt-[2.4rem]">
+                  <div class="font-bold text-[1.4rem] leading-[1.4rem] lg:text-[1.8rem] lg:leading-[1.8rem] text-center">NGUYỄN TRUNG CHÍNH</div>
+                  <div class="mt-[0.8rem] text-[1.2rem] leading-[1.2rem] lg:text-[1.4rem] lg:leading-[1.4rem]">PGS.TS. Bác sĩ Ung bướu</div>
+                  <div class="flex mt-[2.4rem] mb-[0.4rem]"> 
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                  </div>
+                  <div class="text-[1.2rem] leading-[1.2rem] mb-[4.1rem]">4.8/5 (38 bình chọn)  </div>
+                </div>
+              </div>
+              <div class="swiper-slide flex">
+                <div class="max-h-[36.5rem] css_img w-1/2 mx-auto lg:w-full">
+                  <img src="img/team_doctor-3.png" alt="">
+                </div>
+                <div class="flex flex-col justify-center items-center text-[#fff] mt-[2.4rem]">
+                  <div class="font-bold text-[1.4rem] leading-[1.4rem] lg:text-[1.8rem] lg:leading-[1.8rem] text-center">NGUYỄN TRUNG CHÍNH</div>
+                  <div class="mt-[0.8rem] text-[1.2rem] leading-[1.2rem] lg:text-[1.4rem] lg:leading-[1.4rem]">PGS.TS. Bác sĩ Ung bướu</div>
+                  <div class="flex mt-[2.4rem] mb-[0.4rem]"> 
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                  </div>
+                  <div class="text-[1.2rem] leading-[1.2rem] mb-[4.1rem]">4.8/5 (38 bình chọn)  </div>
+                </div>
+              </div>
+              <div class="swiper-slide flex">
+                <div class="max-h-[36.5rem] css_img w-1/2 mx-auto lg:w-full">
+                  <img src="img/team_doctor-4.png" alt="">
+                </div>
+                <div class="flex flex-col justify-center items-center text-[#fff] mt-[2.4rem]">
+                  <div class="font-bold text-[1.4rem] leading-[1.4rem] lg:text-[1.8rem] lg:leading-[1.8rem] text-center">NGUYỄN TRUNG CHÍNH</div>
+                  <div class="mt-[0.8rem] text-[1.2rem] leading-[1.2rem] lg:text-[1.4rem] lg:leading-[1.4rem]">PGS.TS. Bác sĩ Ung bướu</div>
+                  <div class="flex mt-[2.4rem] mb-[0.4rem]"> 
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                  </div>
+                  <div class="text-[1.2rem] leading-[1.2rem] mb-[4.1rem]">4.8/5 (38 bình chọn)  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination !mt-[4rem]"></div>
+          </div>
+        </div>
+
+        <div class="flex justify-between z-20 relative mt-[-32%] sm:mt-[-22%] lg:mt-[-12%] mx-[-1.4rem] ">
+          <div class="w-[4rem] ">
+            <img src="img/bonus_prev-icon.png" alt="" class="b ">
+          </div>
+          <div class="w-[4rem] ">
+            <img src="img/bonus_next-icon.png" alt="" class="a">
+          </div>  
+        </div>
+        <script>
+          var swiper = new Swiper(".mySwiper2", {
+            effect: 'cover',
+              // centeredSlides: true, 
+              slidesPerView: 1,
+              spaceBetween: 30,
+              loop: true,
+              pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+  
+                // type: "fraction",
+              },
+              navigation: {
+                nextEl: ".a",
+                prevEl: ".b",
+              },
+              breakpoints: {
+                      640: {
+                      slidesPerView: 2,
+                      spaceBetween: 20,
+                      },
+                      768: {
+                      slidesPerView: 3,
+                      spaceBetween: 30,
+                      },
+                      1024: {
+                      slidesPerView: 4,
+                      spaceBetween: 106,
+                      },
+                  },
+            });
+        </script>
+      </div>
+    </div>
+
+        <!-- feel -->
+    <div class="mt-[21.4rem] bg-[url('img/feel_background.png')] bg-no-repeat bg-[length:100%_831px]">
+      <div class="container">
+        <h2 class="text-center text-[2rem] leading-[2rem]  lg:text-[3.8rem] lg:leading-[3.8rem] font-bold mb-[4rem] max-w-[85.6rem] mx-auto pt-[8rem]">Cảm nhận của khách hàng sau khi sử dụng dịch vụ Tầm soát ung thư tuyến giáp</h2>
+        <div class="swiper mySwiper3 !px-[2rem]">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="flex flex-col items-center border-[#EBEBEB] border-[1px] rounded-[2.5rem] bg-[#fff] mb-[12rem]">
+                <div class="my-[2.4rem] lg:my-[4.8rem]">
+                  <img src="img/feel_icon_two.png" alt="">
+                </div>
+                <div class="px-[6.6rem] font-semibold text-[1.4rem] leading-[1.4rem] lg:text-[1.6rem] lg:leading-[1.6rem] text-center">Bệnh viện Phương Đông mang đến cho tôi cảm giác vô cùng bình yên và an tâm khi thăm khám tại đây!</div>
+                <div class="mt-[1.6rem] px-[1.6rem] sm:px-[3.2rem] text-[1.2rem] leading-[1.2rem] lg:text-[1.4rem] lg:leading-[1.6rem] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit nulla etiam sed consequat dictumst viverra molestie tortor feugiat. Purus consequat, sapien diam nec. Egestas lacinia scelerisque ultrices vivamus adipiscing diam massa phasellus diam. Sit mi at nibh amet, suscipit dui ornare cursus duis.</div>
+                <div class="mt-[3.2rem]">
+                  <img src="img/feel_user-1.png" alt="">
+                </div>
+                <div class="mt-[1.6rem] font-bold text-[1.4rem] leading-[1.4rem] lg:text-[1.6rem] lg:leading-[1.6rem]">Nguyễn Minh Ánh</div>
+                <div class="flex mt-[0.8rem] mb-[3.5rem]"> 
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col items-center border-[#EBEBEB] border-[1px] rounded-[2.5rem] bg-[#fff] mb-[12rem]">
+                <div class="my-[2.4rem] lg:my-[4.8rem]">
+                  <img src="img/feel_icon_two.png" alt="">
+                </div>
+                <div class="px-[6.6rem] font-semibold text-[1.4rem] leading-[1.4rem] lg:text-[1.6rem] lg:leading-[1.6rem] text-center">Bệnh viện Phương Đông mang đến cho tôi cảm giác vô cùng bình yên và an tâm khi thăm khám tại đây!</div>
+                <div class="mt-[1.6rem] px-[1.6rem] sm:px-[3.2rem] text-[1.2rem] leading-[1.2rem] lg:text-[1.4rem] lg:leading-[1.6rem] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit nulla etiam sed consequat dictumst viverra molestie tortor feugiat. Purus consequat, sapien diam nec. Egestas lacinia scelerisque ultrices vivamus adipiscing diam massa phasellus diam. Sit mi at nibh amet, suscipit dui ornare cursus duis.</div>
+                <div class="mt-[3.2rem]">
+                  <img src="img/feel_user-2.png" alt="">
+                </div>
+                <div class="mt-[1.6rem] font-bold text-[1.4rem] leading-[1.4rem] lg:text-[1.6rem] lg:leading-[1.6rem]">Nguyễn Minh Ánh</div>
+                <div class="flex mt-[0.8rem] mb-[3.5rem]"> 
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col items-center border-[#EBEBEB] border-[1px] rounded-[2.5rem] bg-[#fff] mb-[12rem]">
+                <div class="my-[2.4rem] lg:my-[4.8rem]">
+                  <img src="img/feel_icon_two.png" alt="">
+                </div>
+                <div class="px-[6.6rem] font-semibold text-[1.4rem] leading-[1.4rem] lg:text-[1.6rem] lg:leading-[1.6rem] text-center">Bệnh viện Phương Đông mang đến cho tôi cảm giác vô cùng bình yên và an tâm khi thăm khám tại đây!</div>
+                <div class="mt-[1.6rem] px-[1.6rem] sm:px-[3.2rem] text-[1.2rem] leading-[1.2rem] lg:text-[1.4rem] lg:leading-[1.6rem] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit nulla etiam sed consequat dictumst viverra molestie tortor feugiat. Purus consequat, sapien diam nec. Egestas lacinia scelerisque ultrices vivamus adipiscing diam massa phasellus diam. Sit mi at nibh amet, suscipit dui ornare cursus duis.</div>
+                <div class="mt-[3.2rem]">
+                  <img src="img/feel_user-3.png" alt="">
+                </div>
+                <div class="mt-[1.6rem] font-bold text-[1.4rem] leading-[1.4rem] lg:text-[1.6rem] lg:leading-[1.6rem]">Nguyễn Minh Ánh</div>
+                <div class="flex mt-[0.8rem] mb-[3.5rem]"> 
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col items-center border-[#EBEBEB] border-[1px] rounded-[2.5rem] bg-[#fff] mb-[12rem]">
+                <div class="my-[2.4rem] lg:my-[4.8rem]">
+                  <img src="img/feel_icon_two.png" alt="">
+                </div>
+                <div class="px-[6.6rem] font-semibold text-[1.4rem] leading-[1.4rem] lg:text-[1.6rem] lg:leading-[1.6rem] text-center">Bệnh viện Phương Đông mang đến cho tôi cảm giác vô cùng bình yên và an tâm khi thăm khám tại đây!</div>
+                <div class="mt-[1.6rem] px-[1.6rem] sm:px-[3.2rem] text-[1.2rem] leading-[1.2rem] lg:text-[1.4rem] lg:leading-[1.6rem] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit nulla etiam sed consequat dictumst viverra molestie tortor feugiat. Purus consequat, sapien diam nec. Egestas lacinia scelerisque ultrices vivamus adipiscing diam massa phasellus diam. Sit mi at nibh amet, suscipit dui ornare cursus duis.</div>
+                <div class="mt-[3.2rem]">
+                  <img src="img/feel_user-1.png" alt="">
+                </div>
+                <div class="mt-[1.6rem] font-bold text-[1.4rem] leading-[1.4rem] lg:text-[1.6rem] lg:leading-[1.6rem]">Nguyễn Minh Ánh</div>
+                <div class="flex mt-[0.8rem] mb-[3.5rem]"> 
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col items-center border-[#EBEBEB] border-[1px] rounded-[2.5rem] bg-[#fff] mb-[12rem]">
+                <div class="my-[2.4rem] lg:my-[4.8rem]">
+                  <img src="img/feel_icon_two.png" alt="">
+                </div>
+                <div class="px-[6.6rem] font-semibold text-[1.4rem] leading-[1.4rem] lg:text-[1.6rem] lg:leading-[1.6rem] text-center">Bệnh viện Phương Đông mang đến cho tôi cảm giác vô cùng bình yên và an tâm khi thăm khám tại đây!</div>
+                <div class="mt-[1.6rem] px-[1.6rem] sm:px-[3.2rem] text-[1.2rem] leading-[1.2rem] lg:text-[1.4rem] lg:leading-[1.6rem] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit nulla etiam sed consequat dictumst viverra molestie tortor feugiat. Purus consequat, sapien diam nec. Egestas lacinia scelerisque ultrices vivamus adipiscing diam massa phasellus diam. Sit mi at nibh amet, suscipit dui ornare cursus duis.</div>
+                <div class="mt-[3.2rem]">
+                  <img src="img/feel_user-2.png" alt="">
+                </div>
+                <div class="mt-[1.6rem] font-bold text-[1.4rem] leading-[1.4rem] lg:text-[1.6rem] lg:leading-[1.6rem]">Nguyễn Minh Ánh</div>
+                <div class="flex mt-[0.8rem] mb-[3.5rem]"> 
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col items-center border-[#EBEBEB] border-[1px] rounded-[2.5rem] bg-[#fff] mb-[12rem]">
+                <div class="my-[2.4rem] lg:my-[4.8rem]">
+                  <img src="img/feel_icon_two.png" alt="">
+                </div>
+                <div class="px-[6.6rem] font-semibold text-[1.4rem] leading-[1.4rem] lg:text-[1.6rem] lg:leading-[1.6rem] text-center">Bệnh viện Phương Đông mang đến cho tôi cảm giác vô cùng bình yên và an tâm khi thăm khám tại đây!</div>
+                <div class="mt-[1.6rem] px-[1.6rem] sm:px-[3.2rem] text-[1.2rem] leading-[1.2rem] lg:text-[1.4rem] lg:leading-[1.6rem] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit nulla etiam sed consequat dictumst viverra molestie tortor feugiat. Purus consequat, sapien diam nec. Egestas lacinia scelerisque ultrices vivamus adipiscing diam massa phasellus diam. Sit mi at nibh amet, suscipit dui ornare cursus duis.</div>
+                <div class="mt-[3.2rem]">
+                  <img src="img/feel_user-3.png" alt="">
+                </div>
+                <div class="mt-[1.6rem] font-bold text-[1.4rem] leading-[1.4rem] lg:text-[1.6rem] lg:leading-[1.6rem]">Nguyễn Minh Ánh</div>
+                <div class="flex mt-[0.8rem] mb-[3.5rem]"> 
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                    <img src="img/team_icon-star.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination !mt-[4rem]"></div>
+        </div>
+        <div class="flex justify-between z-20 relative mt-[-80%] sm:mt-[-40%] lg:mt-[-28%]  pb-[80%] sm:pb-[40%] lg:pb-[28%] mx-[-1.4rem] ">
+          <div class="w-[4rem] ">
+            <img src="img/bonus_prev-icon.png" alt="" class="b ">
+          </div>
+          <div class="w-[4rem] ">
+            <img src="img/bonus_next-icon.png" alt="" class="a">
+          </div>  
+        </div>
+        <script>
+          var swiper = new Swiper(".mySwiper3", {
+            effect: 'cover',
+              // centeredSlides: true, 
+              slidesPerView: 1,
+              spaceBetween: 30,
+              loop: true,
+              pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+  
+                // type: "fraction",
+              },
+              navigation: {
+                nextEl: ".a",
+                prevEl: ".b",
+              },
+              breakpoints: {
+                      640: {
+                      slidesPerView: 2,
+                      spaceBetween: 20,
+                      },
+                      768: {
+                      slidesPerView: 2,
+                      spaceBetween: 20,
+                      },
+                      1024: {
+                      slidesPerView: 3,
+                      spaceBetween: 32,
+                      },
+                  },
+            });
+        </script>
+      </div>
+    </div>
+
+    <!-- sign -->
+    <div class="mt-[9.6rem]">
+      <div class="container">
+        <div class="sm:flex items-center">
+          <div class="sm:w-3/5 sm:mr-[3.2rem]">
+            <img src="img/sign_combo-medical.png" alt="">
+          </div>
+          <div class="sm:w-2/5 mt-[4rem] sm:mt-0 text-[#fff] border-[#EBEBEB] border-[1px] rounded-[1.5rem]">
+            <div class="text-center bg-gradient-to-r from-pink-300 to-purple-500 mix-blend-normal h-[8rem] rounded-t-[1.5rem]">
+                <div class="font-bold text-[1.6rem] leading-[1.6rem] lg:text-[2rem] lg:leading-[2rem] pt-[1.8rem]">ĐĂNG KÝ TƯ VẤN MIỄN PHÍ</div>
+                <div class="font-semibold text-[1.2rem] leading-[1.2rem] lg:text-[1.4rem] lg:leading-[1.4rem] mt-[0.4rem]">Đặt hẹn ngay để nhận tư vấn và chúng tôi sẽ xếp lịch khám kịp thời!</div>
+            </div>
+            <div class="flex flex-col items-center px-[3.7rem] bg-[#fff] rounded-b-[1.5rem]">
+                <div class=" flex flex-col justify-center w-full mx-[3.7rem]">
+                    <input class="name-footer border-[0.2] rounded-[0.5rem] outline-none bg-[#F5F5F5] text-[#888888] pt-[1.3rem] pb-[1.4rem] pl-[1.5rem] mt-[1.6rem] lg:mt-[3.2rem]" type="text" placeholder="Họ và tên (*)">
+                    <input class="phone-footer border-[0.2] rounded-[0.5rem] outline-none bg-[#F5F5F5] text-[#888888] pt-[1.3rem] pb-[1.4rem] pl-[1.5rem] mt-[1.6rem]" type="text" placeholder="Số điện thoại (*)">
+                    <input class="email-footer border-[0.2] rounded-[0.5rem] outline-none bg-[#F5F5F5] text-[#888888] pt-[1.3rem] pb-[1.4rem] pl-[1.5rem] mt-[1.6rem]" type="text" placeholder="E-mail">
+                    <input class="content-footer border-[0.2] rounded-[0.5rem] outline-none bg-[#F5F5F5] text-[#888888] pt-[1.3rem] pb-[1.4rem] lg:pb-[4.8rem] pl-[1.5rem] mt-[1.6rem]" type="text" placeholder="Nội dung...">
+                </div>
+                <div onclick="sendFooter()" class=" flex  justify-center items-center bg-gradient-to-r from-[#3EED8B] to-[#0A9949] mix-blend-normal  shadow-xl  shadow-[#3EED88]/20   rounded-[3rem] text-[#fff] w-[21.5rem] lg:h-[4.6rem] mt-[3.2rem] mb-[2rem] lg:mb-[3.5rem] py-[0.4rem] lg:py-0">
+                    <div class="text-3xl">
+                        <img src="img/sign_icon-doc.png" alt="">
+                    </div>
+                    <span class="font-bold text-[1.2rem] leading-[1.2rem] lg:text-[1.6rem] lg:leading-[1.6rem] pl-[0.8rem] tracking-[0.08rem]">ĐĂNG KÝ TƯ VẤN</span>
+                </div> 
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <section>
+    <div class="mt-[9.6rem] bg-gradient-to-r from-pink-300 to-purple-500 mix-blend-normal">
+      <footer>
+        <div class="container">
+          <div class="">
+            <div class="pt-[4rem] flex justify-center">
+              <img src="img/footer_logo.png" alt="">
+            </div>
+            <div class="mx-auto grid grid-rows-[4fr_3fr__3fr_2fr] sm:grid-cols-[3fr_2fr] sm:grid-rows-2 lg:grid-rows-1 lg:grid-cols-[6fr_4fr__4fr_3fr] gap-y-[2.4rem] sm:gap-y-[5.6rem] lg:gap-y-0  gap-x-[5.6rem] mt-[5.6rem] lg:mt-[2.4rem] text-[#fff] border-b-[0.1rem] border-[#fff] pb-[4rem]">
+              <div class="max-w-[45rem]">
+                <h2 class="font-bold text-[1.4rem] leading-[1.4rem] md:text-[2rem] md:leading-[2rem]">BỆNH VIỆN ĐA KHOA PHƯƠNG ĐÔNG</h2>
+                <div class="flex mt-[1.6rem]">
+                  <div class="font-bold text-[1.2rem] leading-[1.2rem] md:text-[1.8rem] md:leading-[1.8rem]">Địa chỉ:
+                      <span class="font-normal text-[1.2rem] leading-[1.2rem] md:text-[1.8rem] md:leading-[1.8rem] "> Số 9, Phố Viên, P. Cổ Nhuế 2, Q. Bắc Từ Liêm, HN</span>
+                  </div>
+                </div>
+                <div class="flex mt-[1.2rem]">
+                  <div class="font-bold text-[1.2rem] leading-[1.2rem] md:text-[1.8rem] md:leading-[1.8rem]">Email:
+                      <span class="font-normal text-[1.2rem] leading-[1.2rem] md:text-[1.8rem] md:leading-[1.8rem] "> bvphuongdong@phuongdonghospital.vn</span>
+                  </div>
+                </div>
+                <div class="flex mt-[1.2rem]">
+                  <div class="font-bold text-[1.2rem] leading-[1.2rem] md:text-[1.8rem] md:leading-[1.8rem]">Hotline:
+                      <span class="font-normal text-[1.2rem] leading-[1.2rem] md:text-[1.8rem] md:leading-[1.8rem] "> 1900 1806</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <div class="font-bold text-[1.4rem] leading-[1.4rem] md:text-[2rem] md:leading-[2rem]">Thời gian mở cửa</div>
+                <div class="flex mt-[1.6rem]">
+                    <div class="font-bold text-[1.2rem] leading-[1.2rem] md:text-[1.8rem] md:leading-[1.8rem]">Thứ 2 - Chủ nhật :
+                        <span class="font-normal text-[1.2rem] leading-[1.2rem] md:text-[1.8rem] md:leading-[1.8rem] ">07:30 -19:00</span>
+                    </div>
+                </div>
+                <div class="flex mt-[1.2rem]">
+                    <div class="font-bold text-[1.2rem] leading-[1.2rem] md:text-[1.8rem] md:leading-[1.8rem]">Cấp cứu 24/7:
+                        <span class="font-normal text-[1.2rem] leading-[1.2rem] md:text-[1.8rem] md:leading-[1.8rem]">0833 015 115</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="">
+                <div class="font-bold text-[1.4rem] leading-[1.4rem] md:text-[2rem] md:leading-[2rem]">Liên hệ</div>
+                <div class="flex mt-[1.6rem]">
+                    <div class="font-bold text-[1.2rem] leading-[1.2rem] md:text-[1.8rem] md:leading-[1.8rem]">Hotline Tiêm chủng:
+                        <span class="font-normal text-[1.2rem] leading-[1.2rem] md:text-[1.8rem] md:leading-[1.8rem]">0911 615 115</span>
+                    </div>
+                </div>
+                <div class="flex mt-[1.2rem]">
+                    <div class="font-bold text-[1.2rem] leading-[1.2rem] md:text-[1.8rem] md:leading-[1.8rem]">Hotline Khoa sản :
+                        <span class="font-normal text-[1.2rem] leading-[1.2rem] md:text-[1.8rem] md:leading-[1.8rem]">0911 615 115</span>
+                    </div>
+                </div>   
+              </div>
+
+              <div class="">
+                <div class="font-bold text-[1.4rem] leading-[1.4rem] md:text-[2rem] md:leading-[2rem]">Mạng xã hội</div>
+                <div class="flex items-center mt-[1.2rem]">
+                  <div class="" >
+                      <a href="https://www.facebook.com/benhviendakhoaphuongdong">
+                          <img src="img/footer_icon-fb.png" alt="">
+                      </a>
+                  </div>
+                  <div class="ml-[3.2rem]">
+                      <a href="https://twitter.com/bvphuongdong">
+                          <img src="img/footer_icon-twiter.png" alt="">
+                      </a>
+                  </div>
+                  <div class="ml-[3.2rem]">
+                      <a href="https://www.youtube.com/@BenhVienDaKhoaPhuongDong">
+                          <img src="img/footer_icon-youtube.png" alt="">
+                      </a>
+                  </div> 
+                  <div class="ml-[3.2rem]">
+                      <a href="https://www.instagram.com/explore/locations/1810848779179650/bnh-vin-da-khoa-phng-dong/    ">
+                          <img src="img/footer_icon-ig.png  " alt="">
+                      </a>
+                  </div>
+              </div>
+              </div>
+
+            </div>
+            <div class="text-[1.6rem] leading-[1.6rem] text-center py-[1.6rem] text-[#fff]">
+              © Copyright 2022 Bệnh Viện Đa khoa Phương Đông. All Rights Reserved. Designed and developed by Tech5S
+            </div>
+           
+          </div>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <!-- modal -->
+    <section>
+        <div class="js-modal hidden fixed top-0 bottom-0 left-0 right-0 bg-black bg-opacity-40 justify-center items-center z-[50]">
+            <div class="js-modal-container relative animate-[modalFaceIn_0.5s_ease] bg-[#fff] w-1/2 min-h-[20rem]">
+                <div class="js-modal-close absolute right-0 top-0 text-[#fff] p-[1.2rem] cursor-pointer opacity-[0.8] hover:opacity-[1]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </div>         
+                <header class="h-[13rem] text-[#fff] text-center bg-gradient-to-r from-pink-300 to-purple-500 mix-blend-normal">
+                    <div class="pt-[3rem] text-[2.8rem] leading-[2.8rem] font-bold">ĐĂNG KÝ</div>
+                    <div class="mt-[1.8rem]">Đăng ký ngay để có một mức giá thật ưu đãi nào!</div>
+                </header>
+                <div class="modal-body p-[1.6rem]">
+                    <input  type="text" class="name-modal w-full border-[0.1rem] border-solid border-[#ccc] p-[1rem] text-[1.6rem] mb-[2.4rem] rounded-[0.8rem]" placeholder="Họ và tên (*)">
+                    <input  type="text" class="phone-modal w-full border-[0.1rem] border-solid border-[#ccc] p-[1rem] text-[1.6rem] mb-[2.4rem] rounded-[0.8rem]" placeholder="Số điện thoại (*)">
+                    <input  type="text" class="email-modal w-full border-[0.1rem] border-solid border-[#ccc] p-[1rem] text-[1.6rem] mb-[2.4rem] rounded-[0.8rem]" placeholder="E-mail">
+                    <input  type="email" class="content-modal w-full border-[0.1rem] border-solid border-[#ccc] p-[1rem] text-[1.6rem] mb-[2.4rem] rounded-[0.8rem]" placeholder="Nội dung...">
+                    <button onclick="sendModal()" id="buy-tickets" class="hover:opacity-[0.9] w-full p-[1.8rem] border-none text-[#fff] text-[1.6rem] uppercase rounded-[0.8rem] bg-gradient-to-r from-[#3EED8B] to-[#0A9949] mix-blend-normal  shadow-xl  shadow-[#3EED88]/20">
+                        ĐĂNG KÝ NGAY 
+                    </button>
+                </div>        
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+    
