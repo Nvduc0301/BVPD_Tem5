@@ -31,7 +31,7 @@ const sendPhonePrice = () => {
       alert("Số điện thoại phải là số");
     } else {
       alert("Gửi thông tin thành công");
-      
+      document.querySelector(".phone-price").value = ""
     }
 }
 
