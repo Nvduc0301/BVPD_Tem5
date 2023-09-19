@@ -48,6 +48,7 @@ const sendModal = () => {
     alert("Vui lòng nhập đủ thông tin");
   } else if (isNaN(phone)) {
     alert("Số điện thoại phải là số");
+    document.querySelector(".phone-modal").value = "";
   } else {
     alert("Đăng ký thành công");
     document.querySelector(".name-modal").value = "";
@@ -68,6 +69,7 @@ const sendFooter = () => {
     alert("Vui lòng nhập đủ thông tin");
   } else if (isNaN(phone)) {
     alert("Số điện thoại phải là số");
+    document.querySelector(".phone-footer").value = "";
   } else {
     alert("Đăng ký thành công");
     document.querySelector(".name-footer").value = "";
