@@ -48,6 +48,8 @@ section {
   animation: slideDown 1s ease-in-out;
 }
 
+/* Swiper5 custom  */
+
 .mySwiper5 .swiper-slide {
   color: #888;
 }

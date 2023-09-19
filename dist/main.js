@@ -31,8 +31,11 @@ const sendPhonePrice = () => {
       alert("Số điện thoại phải là số");
     } else {
       alert("Gửi thông tin thành công");
+      
     }
 }
+
+//chech send modal
 
 const sendModal = () => {
   var name = document.querySelector(".name-modal").value;
@@ -46,7 +49,11 @@ const sendModal = () => {
   } else if (isNaN(phone)) {
     alert("Số điện thoại phải là số");
   } else {
-    alert("Gửi thông tin thành công");
+    alert("Đăng ký thành công");
+    document.querySelector(".name-modal").value = "";
+    document.querySelector(".phone-modal").value = "";
+    document.querySelector(".email-modal").value = "";
+    document.querySelector(".content-modal").value = "";
   }
 }
 
@@ -62,9 +69,14 @@ const sendFooter = () => {
   } else if (isNaN(phone)) {
     alert("Số điện thoại phải là số");
   } else {
-    alert("Gửi thông tin thành công");
+    alert("Đăng ký thành công");
+    document.querySelector(".name-footer").value = "";
+    document.querySelector(".phone-footer").value = "";
+    document.querySelector(".email-footer").value = "";
+    document.querySelector(".content-footer").value = "";
   }
-}
+  }
+
 
 // modal click sign
 
